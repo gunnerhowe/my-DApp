@@ -11,7 +11,10 @@
   "dependencies": {
     "next": "14.2.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "eslint": "9.4.0",

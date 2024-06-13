@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import getContractInstance from "../utils/myToken";
 import { web3Promise } from "../utils/web3";
+import styles from "../styles/Home.module.css"
 
 const Home = () => {
   const [account, setAccount] = useState("");
@@ -49,10 +50,10 @@ const Home = () => {
   }, [account]);
 
   return (
-    <div>
-      <h1>MyToken DApp</h1>
-      <p>Account: {account}</p>
-      <p>Balance: {balance}</p>
+    <div className={styles.main_body}>
+      <h1 className={styles.main_header}>MyToken DApp</h1>
+      <p className={styles.account}>Account: {account}</p>
+      <p className={styles.balance}>Balance: ${balance}</p>
     </div>
   );
 };
